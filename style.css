@@ -1,5 +1,4 @@
 /* reset css */
-
 * {
   min-width: 0;
   font: inherit;
@@ -35,7 +34,6 @@ p {
 }
 
 /* starts here */
-
 body {
   background-color: #FFDDDE;
   height: 100vh;
@@ -103,24 +101,21 @@ main h1 {
 
 .message-container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .message-container h1 {
   font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .message-container img {
-  margin-top: 20px;
+  margin-top: 10px;
 }
-
-@keyframes palpitation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+/* Se agregaron las siguientes líneas para centrar la imagen */
+.message-container img {
+  margin-top: 20px; /* Ajuste del espacio entre el texto y la imagen */
+  align-self: center; /* Centrar la imagen horizontalmente */
 }
